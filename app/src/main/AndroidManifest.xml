@@ -12,6 +12,16 @@
         android:theme="@style/Theme.BleatZ"
         tools:targetApi="31">
         <activity
+            android:name=".ConnexionActivity"
+            android:label="connexion" >
+        </activity>
+        <activity
+            android:name=".InscriptionActivity"
+            android:label="inscription" >
+        </activity>
+
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

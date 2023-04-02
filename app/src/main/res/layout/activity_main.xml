@@ -9,6 +9,7 @@
     android:padding="10dp"
     android:orientation="vertical"
     >
+
     <ImageView
         android:id="@+id/logo"
         android:layout_marginLeft="50dp"
@@ -17,78 +18,33 @@
         android:src="@drawable/logo" />
 
 
-    <EditText
-        android:layout_width="104dp"
+    <Button
+        android:id="@+id/button_se_connecter"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="20dp"
-        android:text="Login"/>
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="175dp"
+        android:backgroundTint="@color/jaune"
+        android:text="Se connecter" />
 
-    <com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/text_input_layout_login"
-    android:layout_width="250dp"
-    android:layout_height="50dp"
-    android:layout_marginLeft="75dp"
-    app:errorEnabled="true"
-    android:hint="Entrez votre Login">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/text_input_edit_text_login"
-        android:layout_width="250dp"
-        android:layout_height="50dp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <EditText
-        android:layout_width="104dp"
+    <Button
+        android:id="@+id/button_s_inscrire"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="75dp"
-        android:text="Password"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_input_layout_password"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="75dp"
-        android:hint="Entrez votre Mot de passe">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text_input_edit_text_password"
-            android:layout_width="250dp"
-            android:layout_height="50dp"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/text_view_inscription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="10dp"
-        android:text="Si vous n'avez pas de compte, "
-        />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/gris"
+        android:text="S'inscrire" />
 
     <TextView
         android:id="@+id/text_view_s_inscrire"
-        android:layout_width="75dp"
+        android:layout_width="184dp"
         android:layout_height="49dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="5dp"
-        android:text="S'inscrire"
-        android:textColor="@color/blue"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
         android:clickable="true"
-        />
-
-
-    <Button
-        android:id="@+id/button_connexion"
-        android:layout_marginTop="75dp"
-        android:layout_marginLeft="130dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Connexion" />
-
-
-
+        android:text="Se connecter plus tard"
+        android:textColor="@color/black" />
 
 
 </LinearLayout>
