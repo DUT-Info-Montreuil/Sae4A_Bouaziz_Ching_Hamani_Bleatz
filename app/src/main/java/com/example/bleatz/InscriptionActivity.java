@@ -1,6 +1,8 @@
 package com.example.bleatz;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -33,6 +35,14 @@ public class InscriptionActivity extends AppCompatActivity {
         email = findViewById(R.id.text_input_layout_email);
         address = findViewById(R.id.text_input_layout_address);
         phone = findViewById(R.id.text_input_layout_phone);
+
+        seConnecter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InscriptionActivity.this, ConnexionActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

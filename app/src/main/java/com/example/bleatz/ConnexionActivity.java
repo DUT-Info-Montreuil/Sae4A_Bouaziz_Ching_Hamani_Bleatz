@@ -1,7 +1,9 @@
 package com.example.bleatz;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -15,7 +17,7 @@ public class ConnexionActivity extends AppCompatActivity {
     private TextInputLayout login ;
     private TextInputLayout password ;
     private TextView sincrire;
-    private Button button ;
+    private Button connexionbutton ;
 
 
 
@@ -28,8 +30,15 @@ public class ConnexionActivity extends AppCompatActivity {
         login = findViewById(R.id.text_input_layout_login);
         password = findViewById(R.id.text_input_layout_password);
         sincrire = findViewById(R.id.text_view_s_inscrire);
-        button = findViewById(R.id.button_connexion);
+        connexionbutton = findViewById(R.id.button_connexion);
 
 
+        sincrire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ConnexionActivity.this, InscriptionActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
