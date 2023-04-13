@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.main_framelayout, fragment);
         fragmentTransaction.commit();
     }
-    private void updateSelectedIcon(int selectedIconId) {
+    public void updateSelectedIcon(int selectedIconId) {
         int selectedColor = getResources().getColor(R.color.orange_300);
         int defaultColor = getResources().getColor(R.color.grey_700);
 

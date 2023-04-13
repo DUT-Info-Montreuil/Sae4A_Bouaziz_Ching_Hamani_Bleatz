@@ -114,12 +114,15 @@
             </LinearLayout>
 
             <HorizontalScrollView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:scrollbars="none">
+                android:clickable="true"
+                android:scrollbars="none"
+                tools:ignore="InvalidId">
 
                 <LinearLayout
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -133,6 +136,7 @@
                         android:orientation="vertical">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/burger_1"
                             android:layout_width="250dp"
                             android:layout_height="160dp"
                             android:layout_margin="1dp"
@@ -142,6 +146,7 @@
                             app:cardUseCompatPadding="false">
 
                             <ImageView
+
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
@@ -169,6 +174,7 @@
                         android:orientation="vertical">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/burger_2"
                             android:layout_width="250dp"
                             android:layout_height="160dp"
                             android:layout_margin="1dp"
@@ -178,6 +184,7 @@
                             app:cardUseCompatPadding="false">
 
                             <ImageView
+
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
@@ -205,6 +212,7 @@
                         android:orientation="vertical">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/burger_3"
                             android:layout_width="250dp"
                             android:layout_height="160dp"
                             android:layout_margin="1dp"
@@ -222,6 +230,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Burger 3"

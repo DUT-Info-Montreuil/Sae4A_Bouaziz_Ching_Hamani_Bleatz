@@ -6,16 +6,24 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import fr.stvenchg.bleatz.R;
 import fr.stvenchg.bleatz.activity.AddAddressActivity;
+import fr.stvenchg.bleatz.activity.MainActivity;
 import fr.stvenchg.bleatz.api.ApiClient;
 import fr.stvenchg.bleatz.api.ApiInterface;
 import fr.stvenchg.bleatz.api.AuthenticationManager;
@@ -36,6 +44,8 @@ public class HomeFragment extends Fragment {
     private TextView addressTextView;
 
     private LinearLayout addAddressBar;
+
+    private CardView burger_1, burger_2, burger_3;
 
     private static final int REQUEST_CODE = 100;
 
@@ -88,8 +98,17 @@ public class HomeFragment extends Fragment {
         addAddressBar = view.findViewById(R.id.fhome_linearlayout_addaddress);
         addressTextView = view.findViewById(R.id.fhome_textview_address);
 
+        burger_1 = view.findViewById(R.id.burger_1);
+
         bonjourTextView.setText("Salut " + firstname + ",");
         addressTextView.setText(address);
+
+        burger_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
+
 
         addAddressBar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,5 +119,6 @@ public class HomeFragment extends Fragment {
         });
 
     }
+
 
 }
